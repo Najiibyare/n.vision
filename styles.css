@@ -1,0 +1,152 @@
+```
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navigation Bar Styles */
+
+.navbar {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    transform: rotate(0deg);
+    transition: all .4s ease-in-out;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+}
+
+.navbar-toggler-icon::before {
+    top: -5px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggler-icon::after {
+    bottom: -5px;
+    transform: rotate(-45deg);
+}
+
+/* Header Styles */
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background-color: #333;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+button.btn {
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Services Styles */
+
+#services ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+li i {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+/* About Styles */
+
+#about img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+/* Contact Styles */
+
+#contact form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 40%;
+    height: 30px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+textarea {
+    width: 40%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+```
