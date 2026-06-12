@@ -1,52 +1,79 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Luxury Barber</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Barber</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="hero">
-            <img src="https://www.gettyimages.com/photos/luxury-barber" alt="Luxury Barber Hero">
-            <div class="hero-content">
-                <h1>Experience Luxury Haircare</h1>
-                <p>Where elegance meets precision</p>
-            </div>
-        </div>
-    </header>
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="service-item">
-                <img src="https://www.istockphoto.com/photos/luxury-barber" alt="Haircut Service">
-                <h3>Signature Haircuts</h3>
-                <p>Custom tailored cuts using the latest techniques.</p>
-            </div>
-            <div class="service-item">
-                <img src="https://www.shutterstock.com/search/luxury-barber" alt="Styling Service">
-                <h3>Styling & Grooming</h3>
-                <p>Enhance your look with our premium styling services.</p>
-            </div>
-            <div class="service-item">
-                <img src="https://www.magnific.com/free-photos-vectors/luxury-barbershop" alt="Facial Service">
-                <h3>Facial & Skincare</h3>
-                <p>Complete grooming with our exclusive skincare range.</p>
-            </div>
-        </div>
-    </section>
-    <section class="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-images">
-            <img src="https://www.gettyimages.com/photos/luxury-barber" alt="Gallery Image 1">
-            <img src="https://www.istockphoto.com/photos/luxury-barber" alt="Gallery Image 2">
-            <img src="https://www.shutterstock.com/search/luxury-barber" alt="Gallery Image 3">
-            <img src="https://www.magnific.com/free-photos-vectors/luxury-barbershop" alt="Gallery Image 4">
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2023 Luxury Barber. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+  <header>
+    <nav>
+      <div class="logo">Luxury Barber</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1621605815971-fbc98d665033');">
+    <div class="hero-content">
+      <h1>Experience Elegance</h1>
+      <p>Where luxury meets precision in every haircut</p>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1554372531-55e56c66165e" alt="Haircut" />
+        <h3>Custom Haircuts</h3>
+        <p>Expertly crafted hairstyles tailored to your unique style.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1554372531-55e56c66165e" alt="Beard Trim" />
+        <h3>Beard Trimming</h3>
+        <p>Precision detailing for the perfect beard shape.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1554372531-55e56c66165e" alt="Hair Styling" />
+        <h3>Hair Styling</h3>
+        <p>Stylish looks for every occasion, expertly designed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" alt="Barber Shop" />
+      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" alt="Barber Shop" />
+      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033" alt="Barber Shop" />
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Luxury Barber. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
