@@ -1,121 +1,96 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
 
-.header {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+header {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-.header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.hero {
+    position: relative;
+    overflow: hidden;
 }
 
-.header nav ul li {
-  display: inline-block;
-  margin-right: 20px;
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.header nav a {
-  color: #fff;
-  text-decoration: none;
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-shadow: 1px 1px 2px #000;
 }
 
-.main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+section {
+    padding: 60px 20px;
 }
 
-#hero {
-  background-image: linear-gradient(to bottom, #333, #f7f7f7);
-  background-blend-mode: multiply;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: #fff;
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #222;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
+.services, .gallery {
+    max-width: 1200px;
+    margin: auto;
 }
 
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
-.btn {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  cursor: pointer;
+.service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-.about, .services, .gallery, .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-.gallery-grid figure {
-  position: relative;
+.gallery-images img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
 
-.gallery-grid figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #333;
-  color: #fff;
-  padding: 5px;
-  font-size: 1.2rem;
+.gallery-images img:hover {
+    transform: scale(1.05);
 }
 
-.contact form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f4f4f4;
+    margin-top: 60px;
 }
 
-contact form input, textarea {
-  width: 100%;
-  height: 30px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-contact form button {
-  width: 100%;
-  height: 40px;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 15px;
+    }
 }
